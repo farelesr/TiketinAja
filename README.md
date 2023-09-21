@@ -1,0 +1,2 @@
+# TiketinAja
+project informatika
