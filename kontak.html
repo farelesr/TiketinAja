@@ -1,0 +1,131 @@
+<html>
+
+<head>
+	<title>Tiketin Aja!</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="layout1.css">
+</head>
+
+<body>
+	<div class="stc-nav">
+		<nav>
+			<ul>
+				<li><a href="./index.html" target="_blank" >Home</a></li>
+				<li><a href="./promo.html" >Promo</a></li>
+				<li>
+					<a href="./tiket.html" >cari tiket</a>
+					<ul>
+						<li><a href="./tiket.html #promo">promo</a></li>
+						<li><a href="./tiket.html #pesawat">pesawat</a></li>
+						<li><a href="./tiket.html #kereta">kereta</a></li>
+					</ul>
+				</li>
+				<li><a href="./mitra.html" >Mitra</a></li>
+				<li><a href="./kontak.html" class="active">Kontak Kami</a></li>
+				</li>
+		</nav>
+	</div>
+
+	<section>
+		<br>
+		<img src="./img/alasan.png">
+		<br>
+
+		<!-- <article>
+			<h1>Menyajikan data menjadi informasi</h1>
+			<p>
+				Belajar bagaimana menyajikan data menjadi informasi berbasis Web, dengan Web statis Programming dari
+				dasar dengan HTML CSS
+			</p>
+			<p>
+				Pada pmbelajaran ini siswa belajar dengan langsung membuat project E-Marketplace sesuai tema
+				masing-masing</p>
+				
+				<a href="https://codepen.io/farelesr/pen/dywGMPj">Klik Aja!</a>
+		</article> -->
+
+	</section>
+
+	<section>
+		<form method="get">
+			<h2 align=center>FORM PEMESANAN</h2><hr>
+			<p>
+			<label>Name
+			<input type="text" name="customer_name" required>
+			</label> 
+			</p>
+			
+			<p>
+			<label>Phone 
+			<input type="tel" name="phone_number">
+			</label>
+			</p>
+			
+			<p>
+			<label>Email 
+			<input type="email" name="email_address">
+			</label>
+			</p>
+			
+			<fieldset>
+			<legend>Size Sepatu yang di pesan?</legend>
+			<p><label> <input type="radio" name="taxi" required value="car"> 40-41</label></p>
+			<p><label> <input type="radio" name="taxi" required value="van"> 42-43</label></p>
+			<p><label> <input type="radio" name="taxi" required value="tuktuk"> 44-45 </label></p>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Paket Pengiriman</legend>
+			<p><label> <input type="checkbox" name="extras" value="baby"> Duz Saja Tanpa Plastik </label></p>
+			<p><label> <input type="checkbox" name="extras" value="wheelchair"> Duz & Plastik </label></p>
+			<p><label> <input type="checkbox" name="extras" value="tip"> Double Plastik Saja </label></p>
+			<p><label> <input type="checkbox" name="extras" value="tip"> Duz & Plastik Wrap </label></p>
+			</fieldset>
+			
+			<p>
+			<label>Pickup Date/Time
+			<input type="datetime-local" name="pickup_time" required>
+			</label>
+			</p>
+				
+			<p>
+			<label>Tempat Pengambilan Barang
+			<select id="tempat_pengambilan" name="tempat_pengambilan">
+			<option value="" selected="selected">Pilih Satu</option>
+			<option value="Rumah" >Rumah</option>
+			<option value="Kantor" >Kantor</option>
+			<option value="Toko Penjual" >Toko Penjual</option>
+			</select>
+			</label> 
+			</p>
+			
+			<p>
+			<label>Tempat Dropoff
+			<input type="text" name="tampat_dropoff" required list="Tujuan">
+			</label>
+			
+			<datalist id="Tujuan">
+			<option value="Airport">
+			<option value="Pelabuhan">
+			<option value="Rumah/Kantor">
+			</datalist>
+			</p>
+			
+			<p>
+			<label>Pesan Khusus
+			<textarea name="comments" maxlength="1500"></textarea>
+			</label>
+			</p>
+			
+			<p><button>Submit Booking</button></p>
+			
+			</form>
+	</section>
+
+	<footer>
+		<p>©2022 INFORMATIKA | KELAS 11 | Muhammad Farel Alfhareza </p>
+	</footer>
+
+</body>
+
+</html>

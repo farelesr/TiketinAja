@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Moirai+One&display=swap");
+
+:root {
+  --premier: #477ae1;
+  --secondary: #4db5db;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+head {
+  box-sizing: border-box;
+}
+
+header {
+  min-width: 100vw;
+}
+
+.cover-head {
+  width: 100vw;
+  height: 350px;
+  background-image: url(./img/header.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  z-index: -100;
+}
+
+.stc-nav {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  top: 0;
+  background-color: #516dbc;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  float: left;
+  width: 18vw;
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: #4db5db;
+  display: block;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: #477ae1;
+  left: 39.3vw;
+  top: 50px;
+  width: 190px;
+  height: 107px;
+  border-radius: 0 0px 10px 10px;
+}
+
+.well {
+  color: transparent;
+}
+
+nav ul ul a:hover {
+  display: block;
+  background-color: #47aae0;
+  width: 190px;
+  border-radius: 10px;
+}
+
+.active {
+  background: #47aae0;
+}
+
+nav ul ul li a {
+  float: none;
+  display: block;
+  padding-left: 30px;
+  margin-left: -35px;
+  text-align: left;
+  width: 15vw;
+}
+
+nav ul ul li a:hover {
+  color: rgb(204, 236, 231);
+}
+
+nav a {
+  color: white;
+}
+
+.teks-promo {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Indie Flower", cursive;
+  background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+  -webkit-animation: slidein 10s;
+  animation: slidein 10s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.container-tiket {
+  display: flex;
+  height: 230px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-tiket .card {
+  height: 250px;
+  width: 70vw;
+  top: -30px;
+  background-image: linear-gradient(#0396ff 10%, #abdcff 100%);
+  border: 1px solid #0396ff;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+.container-tiket .card:hover{
+  
+}
+
+.tiket form {
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  width: 66vw;
+  margin-left: 3vw;
+}
+
+.tiket form div {
+  display: flex;
+  width: 65vw;
+  padding: 20px;
+  gap: 10px;
+}
+
+.tiket form div p input {
+  width: 20vw;
+  height: 25px;
+  gap: 15px;
+  border: none;
+  border-bottom: 1px solid #477ae1;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 2px;
+}
+
+.tiket form div p {
+  width: 20vw;
+  height: 25px;
+  font-size: 10PX;
+  color: rgba(83, 83, 83, 0.9);
+  border-radius: 2px;
+}
+
+.tiket form div p .btn {
+  width: 20vw;
+  height: 25px;
+  gap: 10px;
+  border: 2px solid var(--secondary);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-left: 40vw;
+  transition: 1s ease;
+}
+
+.btn {
+  width: 20vw;
+  height: 25px;
+  border: 2px solid var(--secondary);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transition: 1s ease;
+}
+
+.tiket form div p .btn:hover,
+.btn:hover {
+  width: 20vw;
+  height: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--secondary);
+  color: white;
+  transition: .5s ease;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.card .ct {
+  display: flex;
+  height: 20px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  padding: 3px;
+  border: 2px solid rgba(254, 254, 254, 0.613);
+  border-radius: 10px;
+}
+
+.container-tiket .card .tiket {
+  height: 207px;
+  width: 70vw;
+  bottom: 0;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+.promo {
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.promo .card-promo {
+  height: 170px;
+  width: 25vw;
+  background-image: linear-gradient(#0396ff 10%, #abdcff 100%);
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+.promo .card-promo img {
+  height: 170px;
+  width: 25vw;
+  border-radius: 9px;
+}
+
+.maskapai {
+  display: flex;
+  height: 210px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh;
+}
+
+.maskapai .teks {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  min-width: 30vw;
+  width: 30vw;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 10vh;
+  margin: 0 3vw 5vh 0;
+}
+
+.maskapai .logo {
+  width: 45vw;
+}
+
+.maskapai .logo img {
+  height: 70px;
+  padding: 7px;
+  width: auto;
+}
+
+footer {
+  width: 100vw;
+  height: 40.3vh;
+  max-height: 40.3vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  color: white;
+  overflow-x: hidden;
+}
+
+footer .gambar {
+  position: absolute;
+  width: 100vw;
+  height: 40.8vh;
+  z-index: -1001;
+  overflow-x: hidden;
+}
+
+footer a {
+  text-decoration: none;
+  color: #cfcfcfcf;
+}
+
+footer a:hover {
+  color: #eaeaea;
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .atas {
+  display: flex;
+  width: 100vw;
+  gap: 5vw;
+  margin: 40px 10vw;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 5px;
+}
+
+footer .logo img {
+  width: 50px;
+  border-radius: 30px;
+}
+
+footer .logo div {
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  margin: 6px;
+  padding: 3px;
+  border: 2px solid rgba(254, 254, 254, 0.613);
+  border-radius: 10px;
+}
+
+footer .logo div:hover {
+  background: rgba(254, 254, 254, 0.613);
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 2px 10px -1px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 2px 10px -1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 1px 2px 10px -1px rgba(255, 255, 255, 0.5);
+}
+
+footer .tentang {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+footer .tentang {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  gap: 10px;
+}
+
+footer .lainnya {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  gap: 7px;
+}
+
+footer .center {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.terimakasih{
+  height: 50vh;
+  width: 100vw;
+  margin-left: 10px;
+  background-image: url(https://i.pinimg.com/564x/b3/73/35/b3733513e0da56fe67b97c1c65e6363e.jpg);
+  color: #247bd3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teks-terimakasih{
+  height: 20vh;
+  width: 70vw;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+/* tampilan mobile */
+@media (max-width: 920px) {
+  .cover-head {
+    width: 100vw;
+    height: 250px;
+  }
+
+  .teks-promo {
+    display: none;
+  }
+
+  .container-tiket {
+    margin-top: 30px;
+  }
+
+  .promo {
+    height: 1100px;
+    width: 100vw;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .promo .card-promo {
+    height: 300px;
+    width: 80vw;
+  }
+
+  .promo .card-promo img {
+    height: 300px;
+    width: 80vw;
+  }
+
+  .maskapai {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100vw;
+  }
+
+  .maskapai .teks {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    min-width: 30vw;
+    width: 80vw;
+    margin: 20px 10vw;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 10vh;
+  }
+
+  .maskapai .logo {
+    width: 80vw;
+    margin: 20px 10vw;
+  }
+
+  .maskapai .logo img {
+    height: 70px;
+    padding: 7px;
+    width: auto;
+  }
+
+  footer {
+    height: auto;
+    max-height: none;
+  }
+
+  footer .gambar {
+    display: none;
+  }
+
+  footer .logo {
+    width: 30vw;
+  }
+
+  footer .lainnya {
+    display: none;
+  }
+}
